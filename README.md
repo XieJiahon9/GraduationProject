@@ -1,38 +1,50 @@
-# GraduationProject
+# 基于用户画像的智能课程推荐与选课辅助系统
+# <h1 align="right">毕业设计项目</p>
+一个基于用户画像的智能推荐系统，旨在为学生提供个性化的选课建议，帮助学生更高效地选择适合自己的课程。
 
-#### 介绍
-中国石油大学（华东）2026届毕业生软件2202班谢嘉鸿2207020226毕业设计
+### 一、项目简介
+简要描述项目的研究背景、目标以及核心思路：
+- 解决选课问题：为什么要做这个项目（比如课程繁多、学生选课困难等）。
+- 通过用户画像和推荐算法为学生提供个性化推荐。
+- 基于知识图谱和图神经网络实现推荐系统。
+##### 	预期成果：
+​	本系统旨在为学生提供个性化、智能化的课程推荐，提升选课效率和学生满意度。
 
-#### 软件架构
-软件架构说明
+### 二、研究内容与功能概述
+1. **用户学习画像构建**
+   - 用户学习数据采集：用户学习数据、评分、标签、基础水平等。
+   - 用户学习建模：通过时序模型捕捉用户学习困难知识点，结合知识图谱中的知识点关联用户学习。
+2. **推荐算法设计**
+   - 路径推理：利用知识图谱中的实体关系路径生成解释性推荐。
+   - 图神经网络（GNN）：通过图卷积网络（GCN）或图注意力网络（GAT）聚合用户与课程的交互信息。
+3. **系统实现与验证**
+   - 系统架构：采用 Spring Boot + Vue.js/React 等技术实现前后端分离架构。
+   - 模块化设计：包括数据采集与处理模块、用户画像计算模块、推荐引擎模块、Web应用模块等。
+   - 实验验证：对推荐结果进行评估和用户验证。
+
+### 三、系统架构
+简要描述系统架构：
+- 前后端分离架构：Spring Boot + Vue.js/React
+- 模块划分：用户画像、推荐算法、数据采集等模块
+- 
+### 四、技术栈
+**后端**：Java（Spring Boot）— 后端服务，提供用户数据管理、推荐计算等功能；MyBatis — 数据持久化。
+**前端**：Vue.js/React — 用于构建用户界面，实现前后端交互；HTML/CSS/JavaScript — 页面样式与交互逻辑。
+**算法**：Python、PyTorch — 用于图神经网络算法的实现与训练；NetworkX — 处理知识图谱相关的图结构数据。
+**数据库**：MySQL/Neo4j — MySQL 用于存储常规数据，Neo4j 用于存储与查询知识图谱数据。
+**开发工具**：IntelliJ IDEA、PyCharm、Git — 常用开发与版本控制工具。
+
+### 五、目录结构
+course-recommend-system（目前为GraduationProject）/
+├── backend/              # 后端代码（Spring Boot/Flask）
+├── frontend/             # 前端代码（Vue.js）
+├── algorithm/            # 推荐算法与用户画像模型
+├── data/                 # 数据集与数据处理脚本
+├── docs/                 # 设计文档与说明
+├── tests/                # 测试脚本与用例
+└── README.md             # 项目说明文档
 
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
-# 毕业设计项目
+### 六、项目作者
+中国石油大学（华东）2026届软件工程专业毕业生  
+联系方式：xiejiahon9@163.com
